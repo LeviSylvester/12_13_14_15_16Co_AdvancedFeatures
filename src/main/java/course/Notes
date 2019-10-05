@@ -1,0 +1,62 @@
+INTERFACES
+-interfete ex. si cu clase complet neinrudite vs clase abstracte ex. shape
+-keyword implements
+-poti defini metode abstracte dar dupa aceea nu le poti suprascrie
+-o interfata este un protocol cu un set de metode
+-adjective sau verbe care sa-ti duca gandul la un comportament
+-3 metode care pot fi implementate: metode abstracta (camp, .., lista de parametri), metode default, metode statice
+-ex. in Shapes
+-o interfata poate sa extinda o alta interfata
+-metodele default tin de instanta (de clasa)
+-cand vrem sa definim mai multe clase care au acelasi comportament sau un protocol ex. toate pot fi colorabile (serializable(transform to bytearray))
+-deci cand sunt mai multe clase neinrudite, dar au acelasi comportament
+-ex vapor masina toate sunt drivable, park
+-o clasa poate sa textinda o alta clasa si sa implementeze o interfata
+-class implements
+-class extends
+-interface implements
+-oriunde e vizibila interfata e vizibil si campul respectiv ex. DEFAULT_COLOUR_CODE
+
+NESTED CLASSES
+-outer/inner
+-sa fie public
+Static (static nested classes are used, the rest very rarely)
+Inner classes
+-non-static member inside another class
+Local inner classes
+-defined inside a method
+Anonymous Inner Classes
+-declared without name
+
+EXCEPTIONS
+-nu-i prevazuta sa fie in flow-ul normal al programului
+-throwable (clasa Throwable - Exception, Error)
+-nu-i best practice prinderea erorilor
+-tip checked=compile-time and unchecked=run-time
+Errors should not be handled bhy application (not checked at compile time)
+-syntax try-catch-finally
+-finally e dupa catch dar inainte de throw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

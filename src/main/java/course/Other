@@ -1,0 +1,5 @@
+mvn clean install
+
+file settings build compiler java target 8
+
+sa punem testul in pachetul cu acelasi nume ca si in src.java
