@@ -68,4 +68,7 @@ public abstract class Shape {
             }
         };
     }
+
+//    public static class ShapeException extends IOException
+
 }

@@ -36,7 +36,34 @@ EXCEPTIONS
 Errors should not be handled bhy application (not checked at compile time)
 -syntax try-catch-finally
 -finally e dupa catch dar inainte de throw
+-exceptia aruncata in clasa subscrisa trebuie sa fie o exceptie subscrisa a exceptiei din clasa parinte
 
+ENUM
+-un mod de a pune impreuna un set de constante
+-syntax public enum ...
+-e o clasa, cu singurele instante... practic final
+-ex. la ip-uri(adresa) si port-uri(camrea), nu vrei sa fie instantiat inc-o conexiune
+-clasa abstracta, generica extinsa in clasa cu enum-urile care vrem noi
+-implicitly public, static, final -> cannot be extended
+
+COLLECTIONS (definite prin interfete) (ca fara interfete sunt si array-urile)
+-set de date puse in aceeasi structura (de acelasi tip)
+-see diagram of structures from pdf
+-(acum: liste, queue, set si map)
+List
+-can contain duplicates
+-add, remove, get, set
+-ArrayList - resizable array, fast for search but slow for ins/del
+-LinkedList - doubly linked list, fast for ins/del, but slow for search
+Queue
+-ArrayQeque - resizable array with double-ended queue functionality
+-PriorityQueue - coada ordonata ((stiva): last in, first out(stack); coada: first in first out(tube))
+Set
+-does not allow duplicates
+-implementations TreeSet*, HashSet*, LinkedHashSet* *see pdf
+-Hash table: tabel de dispersie
+Map (in functie de ordinea naturala a key-urilor)
+-treemap, hashmap,  hashtable (does not allow null keys), hashlinkedmap (tine cont de ordinea in care au fost inserate key-urile)
 
 
 
