@@ -65,6 +65,12 @@ Set
 Map (in functie de ordinea naturala a key-urilor)
 -treemap, hashmap,  hashtable (does not allow null keys), hashlinkedmap (tine cont de ordinea in care au fost inserate key-urile)
 
+INPUT/OUTPUT
+1.System.in ex. System.in.read()
+2.System.out ex. sout
+3.System.err ex. System.err.println cannot read
+
+tema: pt fisiere .txt date ca parametri de intrare, sa tipareasca continutul lor
 
 
 
