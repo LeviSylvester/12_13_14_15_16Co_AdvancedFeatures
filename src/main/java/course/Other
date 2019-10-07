@@ -19,4 +19,4 @@ x equals x
 
 daca putem, o metoda facem statica, este verificat o singura data la compilare, nu la fiecare instanta
 
-hip memory - memory tha java works with (exception if overflow with generated objects, or ex. overflow int)
+hip memory - memory that java works with (exception if overflow with generated objects, or ex. overflow int)
