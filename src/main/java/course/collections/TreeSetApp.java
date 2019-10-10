@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 public class TreeSetApp {
     public static void main(String[] args) {
-        Set<Point> points = new TreeSet<>(/*comparator*/); //fie utilizeaza comparable, sau ii dam ca parametru un comparatpr
+        Set<Point> points = new TreeSet<>(/*comparator*/); //fie utilizeaza comparable, sau ii dam ca parametru un comparator
 
         Point p1 = new Point(1, 2);
         Point p2 = new Point(5, 100);
