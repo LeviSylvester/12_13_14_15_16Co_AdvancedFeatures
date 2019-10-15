@@ -24,4 +24,6 @@ as those of the method inherited from the supertype.
 
 it is still possible to call the overridden method using super keyword
 
+guava dependency for simple adding to lists at instantiation
+
 hip memory - memory that java works with (exception if overflow with generated objects, or ex. overflow int)

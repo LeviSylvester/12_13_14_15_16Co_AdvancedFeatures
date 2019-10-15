@@ -1,4 +1,4 @@
-package vehicles;
+package course.inheritance.vehicles;
 
 public class Car extends Vehicle {
     private boolean isConvertible = false;
@@ -19,6 +19,4 @@ public class Car extends Vehicle {
 
         return isConvertible;
     }
-
-
 }

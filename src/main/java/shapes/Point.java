@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import static course.collections.Utils.getPointDistanceToOrigin;
 
-public class Point implements Comparable {
+public class  Point implements Comparable {
     private double x;
     private double y;
 

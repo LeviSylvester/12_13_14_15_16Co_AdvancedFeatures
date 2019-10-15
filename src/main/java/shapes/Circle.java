@@ -1,10 +1,13 @@
 package shapes;
 
-public abstract class Circle extends Shape implements Colorable {
+import java.io.Serializable;
+
+public abstract class Circle extends Shape implements Colorable, Serializable {
 
     public static Point origin = new Point(0, 0);
 
-    private Point center;
+    //transcient for skipping serialization of this state (Object)
+    private transient Point center;
     private Double radius;
 
     private int x;
@@ -40,12 +43,14 @@ public abstract class Circle extends Shape implements Colorable {
 //        System.out.println("Constructor Circle");
 //        this.radius = radius;
         this(radius, 0, new Point(0, 0));
+        System.out.println("Constructor Circle");
     }
 
-    Circle(Double radius, int colorCode, Point center) {
+    public Circle(Double radius, int colorCode, Point center) {
         super(colorCode);
         this.radius = radius;
         this.center = center;
+        System.out.println("Circle mixt");
     }
 
     //    @Override

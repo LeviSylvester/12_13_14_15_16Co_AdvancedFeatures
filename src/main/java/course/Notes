@@ -72,22 +72,78 @@ INPUT/OUTPUT
 
 tema: pt fisiere .txt date ca parametri de intrare, sa se tipareasca continutul lor
 
+SERIALIZATION
+see class CerializeDesierializeApp
 
+REGEX
+look into it correct:
+?cel mult odata (sa fie sau nu prezent)
++cel putin odata
+*ori de cate ori(?)
+|
+^o data poate sa fie orice in afara de cele definite deja
+ex.^[A-Z]{1}.*[A-Z]$
+^ la inceput insemnand aici ca prima litera trebuie sa fie o majuscula
+play with regex101.com
+https://en.wikipedia.org/wiki/Regular_expression
 
+GENERICS
+ne permit sa parametrizam tipul
+sa scriem aceeasi metoda pentru oricare din tipuri
+task26: Create a method which finds the maximum speed values from a list of Vehicles
+generics -> Utils (constructor privat)
+task29: Create an enum with constants describing possible engine types and having a description (in Vehicle)
 
+FUNCTIONAL PROGRAMMING
+-de la java8
+-nu spui cum anume sa se intample, instead ce sa se intample
+Lambda (concise representations of an anonymus function)
+-nu au nume
+-syntax: (list of parameters) -> {instruction}
+-does not belong to a class, can be passed around as an argument
+-implementation of an interface with a single abstract method
+-study table from slide sent by Lucian
+//sa cream o metoda care foloseste un consumer care sa proceseze o lista de valori
+//lista de valori care trebuie procesata poate sa fie oricare din enumurile definite la engine type si gearbox type
+Functional interfaces (complete from side)
+Method reference
+-referinta spre o metoda
+-sintaxa ClassName::methodName
+-ne da o facilitate in plus, un alt mod de a scrie ceva
+//task36 functional.utils
+Optional Class
+-cand putem sa avem null-uri ca si rezultat dintr-un proces
+-an Optional object encapsulates/wraps a value which might be missing
+-private Optional<Insurance> insurance;
+1.create an empty optional: Optional<Insurance> insurance = Optional.empty();
+2.opt. out of a non-null o.: = Optional.of(car);
+3.out of a nullable o.: Optional.ofNullable(car);
+-cream de ex. cand vrem sa atragem atentia ca poate sa lipseasca
+-unwrapping with methods as seen on slide
+Streams
+-proceesare colectiilor in a declarative way, ce si nu cum
+-pipeline operation on collections
+-you can convert any collection to a stream by calling stream() method
+-two types of operations made on streams:
+1.Intermediate operations - return a stream so other operations can be applied on it (eg map, flatmap, filetr, sorted)
+2.Terminal operations - are either void (eg foreach, ifpresent) or return a value (eg collect, findfirst)
+-we can stream without start from collections:
+-Stream.of() sau IntStream,range() etc.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+JAVA CONCURRENCY
+-rularea proceselor (threads) in paralel
+-dif dintre paralelism si concurenta:
+-concurenta: nu impartim acelasi resurse
+-paralelism: se intampla in acelasi memorie
+-ideal ar fi in aceeasi memorie si independent unul de celalalt
+-2 ways to create threads:
+-extending Thread class, suprascriem metoda run (nu o pornim, doar o definim) see ex. slide
+-psvm is the creation of the main thread
+-thread is called with start() method, de vazut celelalte elemente de pe slide
+Thread synchronization
+-threads work with shared memory
+-multiple threads might try concurrently to modify data ->race condition
+-critical section is the section of code which is accessed for modif by more than one thread ex. coffee machine app
+-Synchronized keyword: to have an expected behaviour
+-Synchronized methods; sync. blocks
+-ce nu trebuie sinc, nu sincroniza, ca sa nu scazi performanta programnului

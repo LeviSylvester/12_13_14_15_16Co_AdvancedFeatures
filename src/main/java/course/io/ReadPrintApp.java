@@ -49,8 +49,5 @@ public class ReadPrintApp {
             System.err.println("Exceptie la citire.");
             exit(-1); //sa stim ca a fost o eroare, sa nu fie exit with code 0
         }
-
     }
-
-
 }

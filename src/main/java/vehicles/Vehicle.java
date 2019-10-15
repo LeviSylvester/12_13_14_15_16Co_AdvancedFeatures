@@ -41,6 +41,41 @@ public class Vehicle {
     public class VehicleCrashedException extends RuntimeException {
         public VehicleCrashedException(String message) {
             super(message);
+
         }
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "maxSpeed=" + maxSpeed +
+                ", currentSpeed=" + currentSpeed +
+                '}';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,5 +1,8 @@
 package shapes;
 
+import course.collections.Utils;
+
+import java.util.Comparator;
 import java.util.Objects;
 
 public class UncomparablePoint {
@@ -55,4 +58,11 @@ public class UncomparablePoint {
 //        result = result * prime + Objects.hash(y);
 //        return (int) (result % (long) Integer.MAX_VALUE);
 //    }
+
+
+    Comparator<UncomparablePoint> com = (point1, point2) -> {
+        double p1DistanceToOrigin = Utils.getPointDistanceToOrigin(point1.getX(), point1.getY());
+        double p2DistanceToOrigin = Utils.getPointDistanceToOrigin(point2.getX(), point2.getY());
+        return Double.compare(p1DistanceToOrigin, p2DistanceToOrigin);
+    };
 }

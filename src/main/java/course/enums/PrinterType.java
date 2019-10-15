@@ -55,7 +55,7 @@ public enum PrinterType /*implements ...*/ {
 //                    cancel = true;
 //                    break;
 //                default:
-//                    print("Invalid input, try again!");
+//                    type("Invalid input, try again!");
 //            }
 //        }
 //    }
