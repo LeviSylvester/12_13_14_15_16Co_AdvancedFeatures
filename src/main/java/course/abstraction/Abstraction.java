@@ -1,4 +1,4 @@
-package course.Abstraction;
+package course.abstraction;
 
 public class Abstraction {
     //cuvinat cheie abstract

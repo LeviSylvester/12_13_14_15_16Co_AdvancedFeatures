@@ -1,10 +1,12 @@
-package grupa9.first;
-//packages start with minuscule
+package course.second;
+
 public class Person {
     int id;
     private String name;
     protected Integer age;
     public String gender;
+
+
 
     public Person(int id, String name, Integer age, String gender) {
         this.id = id;
